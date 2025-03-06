@@ -54,14 +54,20 @@ const Home = () => {
     >
       {/* Hero Section with Comic Pattern */}
       <section className="relative h-screen flex items-center justify-center hero-pattern">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="w-1 px-4 sm:px-6 lg:px-8 text-center min-h-screen relative overflow-hidden bg-fixed"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')`,
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          width: "100%",
+        }}>
           <motion.h1
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-6xl md:text-8xl font-black mb-4 text-black dark:text-white mix-blend-difference"
+            className="text-6xl md:text-8xl font-black mb-4 text-white dark:text-white "
           >
-            CULTFEST '24
+            CULTFEST '25
           </motion.h1>
           <motion.p
             initial={{ y: 20, opacity: 0 }}
@@ -114,7 +120,14 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20 pattern-zigzag">
+      <section className="py-20 pattern-zigzag bg-fixed"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://img.freepik.com/free-vector/comic-style-wallpaper_79603-1248.jpg?t=st=1740212370~exp=1740215970~hmac=099765d4c1c840f660727fac1dd3391a55e83d60b0de0195606a20cfe383bb53&w=1380')`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        width: "100%",
+      }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -163,7 +176,14 @@ const Home = () => {
       </section>
 
       {/* Featured Events */}
-      <section className="py-20 pattern-bubbles">
+      <section className="py-20 pattern-bubbles bg-fixed"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://img.freepik.com/free-vector/boom-expression-background_1142-834.jpg')`,
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        width: "100%",
+      }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-black mb-4 gradient-text">Featured Events</h2>
